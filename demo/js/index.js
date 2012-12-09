@@ -9,6 +9,6 @@ jQuery(function ($) {
 
     $("#kind").change(function () {
         var shape = $(this).val();
-        eventShapeDrawer.draw(shape);
+        eventShapeDrawer.on(shape);
     }).change();
 });
